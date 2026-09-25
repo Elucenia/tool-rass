@@ -1,0 +1,86 @@
+[
+  {
+    "label": "RASS −4: sedação profunda",
+    "input": {
+      "rass": "-4"
+    },
+    "expected": {
+      "score": -4,
+      "level": "high"
+    },
+    "originalInput": {
+      "rass": "-4"
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "RASS −3: sedação moderada",
+    "input": {
+      "rass": "-3"
+    },
+    "expected": {
+      "score": -3,
+      "level": "mid"
+    },
+    "originalInput": {
+      "rass": "-3"
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "RASS −2: limite inferior da sedação leve",
+    "input": {
+      "rass": "-2"
+    },
+    "expected": {
+      "score": -2,
+      "level": "low"
+    },
+    "originalInput": {
+      "rass": "-2"
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "RASS 0: alerta e calmo",
+    "input": {
+      "rass": "0"
+    },
+    "expected": {
+      "score": 0,
+      "level": "low"
+    },
+    "originalInput": {
+      "rass": "0"
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "RASS +1: inquieto",
+    "input": {
+      "rass": "1"
+    },
+    "expected": {
+      "score": 1,
+      "level": "mid"
+    },
+    "originalInput": {
+      "rass": "1"
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "RASS +3: muito agitado",
+    "input": {
+      "rass": "3"
+    },
+    "expected": {
+      "score": 3,
+      "level": "high"
+    },
+    "originalInput": {
+      "rass": "3"
+    },
+    "expandedZeroOptions": []
+  }
+]

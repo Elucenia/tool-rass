@@ -1,0 +1,275 @@
+{
+  "tool": {
+    "id": "rass",
+    "title": "Escala de Agitação e Sedação de Richmond (RASS)",
+    "short": "Nível de sedação e agitação na UTI",
+    "desc": "Escala RASS de −5 a +4 para classificar agitação e sedação do paciente na UTI, com a faixa-alvo de sedação leve recomendada pelas diretrizes.",
+    "lead": "Classifica o nível de agitação ou sedação de pacientes críticos, de combativo (+4) a não despertável (−5), e orienta o ajuste da sedação e a avaliação de delirium.",
+    "spec": [
+      "medicina-intensiva",
+      "anestesiologia",
+      "medicina-de-emergencia",
+      "psiquiatria"
+    ],
+    "fields": [
+      [
+        "rass",
+        "Nível observado",
+        "sel",
+        {
+          "opts": {
+            "0": "0 · Alerta e calmo",
+            "1": "+1 · Inquieto: ansioso, movimentos não agressivos",
+            "2": "+2 · Agitado: movimentos frequentes sem propósito, briga com o ventilador",
+            "3": "+3 · Muito agitado: puxa ou remove tubos e cateteres; agressivo",
+            "4": "+4 · Combativo: violento, perigo imediato para a equipe",
+            "-1": "−1 · Sonolento: desperta à voz e mantém contato visual por mais de 10 s",
+            "-2": "−2 · Sedação leve: desperta à voz, contato visual por menos de 10 s",
+            "-3": "−3 · Sedação moderada: movimento ou abertura ocular à voz, sem contato visual",
+            "-4": "−4 · Sedação profunda: sem resposta à voz; movimento ao estímulo físico",
+            "-5": "−5 · Não despertável: sem resposta à voz nem ao estímulo físico"
+          }
+        }
+      ]
+    ],
+    "score": {
+      "label": "RASS",
+      "unit": "na RASS",
+      "bands": [
+        [
+          -5,
+          "high",
+          "Sedação profunda ou coma (RASS −4 a −5)",
+          "Reavalie a necessidade de sedação profunda; não é possível avaliar delirium (CAM-ICU)."
+        ],
+        [
+          -3,
+          "mid",
+          "Sedação moderada (RASS −3)",
+          "Acima da faixa usual de sedação leve: considere reduzir a sedação se não houver indicação de sedação profunda."
+        ],
+        [
+          -2,
+          "low",
+          "Sedação leve a alerta e calmo (RASS −2 a 0)",
+          "Faixa-alvo habitual da sedação leve (PADIS 2018). Avalie delirium com o CAM-ICU."
+        ],
+        [
+          1,
+          "mid",
+          "Inquieto (RASS +1)",
+          "Procure causas: dor, hipóxia, bexiga cheia, abstinência, delirium."
+        ],
+        [
+          2,
+          "high",
+          "Agitado a combativo (RASS +2 a +4)",
+          "Garanta a segurança do paciente e dos dispositivos; trate a causa e considere sedação."
+        ]
+      ]
+    },
+    "formula": "<p>Avaliação em 3 passos: (1) observe o paciente por 30 s (0 a +4); (2) se não estiver alerta, chame-o pelo nome e peça que olhe para você (−1 a −3); (3) sem resposta à voz, estimule fisicamente balançando o ombro ou esfregando o esterno (−4 a −5).</p>",
+    "table": [
+      [
+        "RASS",
+        "Termo"
+      ],
+      [
+        "+4",
+        "Combativo"
+      ],
+      [
+        "+3",
+        "Muito agitado"
+      ],
+      [
+        "+2",
+        "Agitado"
+      ],
+      [
+        "+1",
+        "Inquieto"
+      ],
+      [
+        "0",
+        "Alerta e calmo"
+      ],
+      [
+        "−1",
+        "Sonolento"
+      ],
+      [
+        "−2",
+        "Sedação leve"
+      ],
+      [
+        "−3",
+        "Sedação moderada"
+      ],
+      [
+        "−4",
+        "Sedação profunda"
+      ],
+      [
+        "−5",
+        "Não despertável"
+      ]
+    ],
+    "tips": [
+      "A diretriz PADIS (SCCM 2018) sugere sedação leve (RASS −2 a 0, em geral) na maioria dos pacientes em ventilação mecânica, com despertar diário ou protocolo de sedação guiado por metas.",
+      "Registre a meta de RASS na prescrição e reavalie a cada turno: a meta muda com a condição clínica (ex.: sedação profunda na hipertensão intracraniana ou com bloqueio neuromuscular).",
+      "Com RASS −4 ou −5 não é possível aplicar o CAM-ICU; a partir de −3, avalie delirium.",
+      "Agitação nova (+2 ou mais) é sintoma: descarte dor, hipoxemia, retenção urinária, abstinência e delirium antes de aumentar sedativos."
+    ],
+    "sources": [
+      [
+        "Sessler CN et al. The Richmond Agitation-Sedation Scale: validity and reliability in adult intensive care unit patients. Am J Respir Crit Care Med, 2002.",
+        "https://doi.org/10.1164/rccm.2107138"
+      ],
+      [
+        "Ely EW et al. Monitoring sedation status over time in ICU patients: reliability and validity of the Richmond Agitation-Sedation Scale (RASS). JAMA, 2003.",
+        "https://doi.org/10.1001/jama.289.22.2983"
+      ],
+      [
+        "Devlin JW et al. Clinical practice guidelines for the prevention and management of pain, agitation/sedation, delirium, immobility, and sleep disruption in adult patients in the ICU. Crit Care Med, 2018.",
+        "https://doi.org/10.1097/CCM.0000000000003299"
+      ]
+    ],
+    "cases": [
+      [
+        "RASS −4: sedação profunda",
+        {
+          "rass": "-4"
+        },
+        {
+          "score": -4,
+          "level": "high"
+        }
+      ],
+      [
+        "RASS −3: sedação moderada",
+        {
+          "rass": "-3"
+        },
+        {
+          "score": -3,
+          "level": "mid"
+        }
+      ],
+      [
+        "RASS −2: limite inferior da sedação leve",
+        {
+          "rass": "-2"
+        },
+        {
+          "score": -2,
+          "level": "low"
+        }
+      ],
+      [
+        "RASS 0: alerta e calmo",
+        {
+          "rass": "0"
+        },
+        {
+          "score": 0,
+          "level": "low"
+        }
+      ],
+      [
+        "RASS +1: inquieto",
+        {
+          "rass": "1"
+        },
+        {
+          "score": 1,
+          "level": "mid"
+        }
+      ],
+      [
+        "RASS +3: muito agitado",
+        {
+          "rass": "3"
+        },
+        {
+          "score": 3,
+          "level": "high"
+        }
+      ]
+    ],
+    "batch": "urgencia",
+    "kind": "Escore",
+    "config": {
+      "unit": "na RASS",
+      "label": "RASS",
+      "fields": [
+        [
+          "rass",
+          "sel",
+          0
+        ]
+      ],
+      "bands": [
+        [
+          -5,
+          "high",
+          "Sedação profunda ou coma (RASS −4 a −5)",
+          "Reavalie a necessidade de sedação profunda; não é possível avaliar delirium (CAM-ICU)."
+        ],
+        [
+          -3,
+          "mid",
+          "Sedação moderada (RASS −3)",
+          "Acima da faixa usual de sedação leve: considere reduzir a sedação se não houver indicação de sedação profunda."
+        ],
+        [
+          -2,
+          "low",
+          "Sedação leve a alerta e calmo (RASS −2 a 0)",
+          "Faixa-alvo habitual da sedação leve (PADIS 2018). Avalie delirium com o CAM-ICU."
+        ],
+        [
+          1,
+          "mid",
+          "Inquieto (RASS +1)",
+          "Procure causas: dor, hipóxia, bexiga cheia, abstinência, delirium."
+        ],
+        [
+          2,
+          "high",
+          "Agitado a combativo (RASS +2 a +4)",
+          "Garanta a segurança do paciente e dos dispositivos; trate a causa e considere sedação."
+        ]
+      ]
+    },
+    "areaId": "urgencia",
+    "clinicalReview": "pending",
+    "sourceReview": "pending",
+    "sourceFile": "app/content/ferramentas/urgencia.php",
+    "arithmeticTest": {
+      "status": "passed",
+      "testedAt": "2026-09-25",
+      "total": 6,
+      "passed": 6,
+      "failures": []
+    },
+    "independentArithmeticTest": {
+      "status": "not-tested",
+      "testedAt": null,
+      "total": 0,
+      "passed": 0,
+      "cases": []
+    }
+  },
+  "review": {
+    "status": "needs-review",
+    "reason": "Revisão documental e clínica independente pendente.",
+    "clinicalValidation": "not-performed"
+  },
+  "sourceFile": {
+    "path": "app/content/ferramentas/urgencia.php",
+    "sha256": "b24f3a77383430c3f3463168e78e88341034b3108bd712f3613ae32672dc281c",
+    "bytes": 121059
+  },
+  "clinicalValidation": "not-performed"
+}
