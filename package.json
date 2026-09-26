@@ -1,7 +1,7 @@
 {
   "name": "@elucenia/tool-rass",
   "version": "0.1.0",
-  "description": "Escala de Agitação e Sedação de Richmond (RASS) · Elucenia: reprodução técnica de fórmula ou escore clínico, sem dependências, para navegador e Node.js.",
+  "description": "Escala de Agitação e Sedação de Richmond (RASS) · ELUCENIA: reprodução técnica de fórmula ou escore clínico, sem dependências, para navegador e Node.js.",
   "keywords": [
     "elucenia",
     "medical-calculator",
