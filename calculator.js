@@ -1,9 +1,11 @@
-/* ELUCENIA standalone integration. Source package metadata and rights: README.md. */
+/* tool-rass · Elucenia · https://github.com/Elucenia/tool-rass
+   Copyright (c) 2026 Elucenia · Felipe Guedes (fgxdev.com). Licensed under the Apache License 2.0: keep this notice and the NOTICE file, and mark your changes.
+   Standalone integration. Package metadata and rights: README.md. */
 (function(root){'use strict';
 function freeze(value){if(value&&typeof value==='object'){for(const item of Object.values(value))freeze(item);Object.freeze(value);}return value;}
 const TOOL=freeze({"id":"rass","title":"Escala de Agitação e Sedação de Richmond (RASS)","fields":[["rass","Nível observado","sel",{"opts":{"0":"0 · Alerta e calmo","1":"+1 · Inquieto: ansioso, movimentos não agressivos","2":"+2 · Agitado: movimentos frequentes sem propósito, briga com o ventilador","3":"+3 · Muito agitado: puxa ou remove tubos e cateteres; agressivo","4":"+4 · Combativo: violento, perigo imediato para a equipe","-1":"−1 · Sonolento: desperta à voz e mantém contato visual por mais de 10 s","-2":"−2 · Sedação leve: desperta à voz, contato visual por menos de 10 s","-3":"−3 · Sedação moderada: movimento ou abertura ocular à voz, sem contato visual","-4":"−4 · Sedação profunda: sem resposta à voz; movimento ao estímulo físico","-5":"−5 · Não despertável: sem resposta à voz nem ao estímulo físico"}}]],"config":{"unit":"na RASS","label":"RASS","fields":[["rass","sel",0]],"bands":[[-5,"high","Sedação profunda ou coma (RASS −4 a −5)","Reavalie a necessidade de sedação profunda; não é possível avaliar delirium (CAM-ICU)."],[-3,"mid","Sedação moderada (RASS −3)","Acima da faixa usual de sedação leve: considere reduzir a sedação se não houver indicação de sedação profunda."],[-2,"low","Sedação leve a alerta e calmo (RASS −2 a 0)","Faixa-alvo habitual da sedação leve (PADIS 2018). Avalie delirium com o CAM-ICU."],[1,"mid","Inquieto (RASS +1)","Procure causas: dor, hipóxia, bexiga cheia, abstinência, delirium."],[2,"high","Agitado a combativo (RASS +2 a +4)","Garanta a segurança do paciente e dos dispositivos; trate a causa e considere sedação."]]},"reviewStatus":"needs-review","clinicalValidation":"not-performed"});
 const window={};
-/* ELUCENIA arithmetic registry. No DOM access, storage, telemetry or network requests. */
+/* Elucenia arithmetic registry. No DOM access, storage, telemetry or network requests. */
 (function(root){
   'use strict';
   const CALC={fn:Object.create(null)};
