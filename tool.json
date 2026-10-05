@@ -5,6 +5,7 @@
     "short": "Nível de sedação e agitação na UTI",
     "desc": "Escala RASS de −5 a +4 para classificar agitação e sedação do paciente na UTI, com a faixa-alvo de sedação leve recomendada pelas diretrizes.",
     "lead": "Classifica o nível de agitação ou sedação de pacientes críticos, de combativo (+4) a não despertável (−5), e orienta o ajuste da sedação e a avaliação de delirium.",
+    "kind": "Escore",
     "spec": [
       "medicina-intensiva",
       "anestesiologia",
@@ -32,95 +33,7 @@
         }
       ]
     ],
-    "score": {
-      "label": "RASS",
-      "unit": "na RASS",
-      "bands": [
-        [
-          -5,
-          "high",
-          "Sedação profunda ou coma (RASS −4 a −5)",
-          "Reavalie a necessidade de sedação profunda; não é possível avaliar delirium (CAM-ICU)."
-        ],
-        [
-          -3,
-          "mid",
-          "Sedação moderada (RASS −3)",
-          "Acima da faixa usual de sedação leve: considere reduzir a sedação se não houver indicação de sedação profunda."
-        ],
-        [
-          -2,
-          "low",
-          "Sedação leve a alerta e calmo (RASS −2 a 0)",
-          "Faixa-alvo habitual da sedação leve (PADIS 2018). Avalie delirium com o CAM-ICU."
-        ],
-        [
-          1,
-          "mid",
-          "Inquieto (RASS +1)",
-          "Procure causas: dor, hipóxia, bexiga cheia, abstinência, delirium."
-        ],
-        [
-          2,
-          "high",
-          "Agitado a combativo (RASS +2 a +4)",
-          "Garanta a segurança do paciente e dos dispositivos; trate a causa e considere sedação."
-        ]
-      ]
-    },
     "formula": "<p>Avaliação em 3 passos: (1) observe o paciente por 30 s (0 a +4); (2) se não estiver alerta, chame-o pelo nome e peça que olhe para você (−1 a −3); (3) sem resposta à voz, estimule fisicamente balançando o ombro ou esfregando o esterno (−4 a −5).</p>",
-    "table": [
-      [
-        "RASS",
-        "Termo"
-      ],
-      [
-        "+4",
-        "Combativo"
-      ],
-      [
-        "+3",
-        "Muito agitado"
-      ],
-      [
-        "+2",
-        "Agitado"
-      ],
-      [
-        "+1",
-        "Inquieto"
-      ],
-      [
-        "0",
-        "Alerta e calmo"
-      ],
-      [
-        "−1",
-        "Sonolento"
-      ],
-      [
-        "−2",
-        "Sedação leve"
-      ],
-      [
-        "−3",
-        "Sedação moderada"
-      ],
-      [
-        "−4",
-        "Sedação profunda"
-      ],
-      [
-        "−5",
-        "Não despertável"
-      ]
-    ],
-    "tips": [
-      "A diretriz PADIS (SCCM 2018) sugere sedação leve (RASS −2 a 0, em geral) na maioria dos pacientes em ventilação mecânica, com despertar diário ou protocolo de sedação guiado por metas.",
-      "Registre a meta de RASS na prescrição e reavalie a cada turno: a meta muda com a condição clínica (ex.: sedação profunda na hipertensão intracraniana ou com bloqueio neuromuscular).",
-      "Com RASS −4 ou −5 não é possível aplicar o CAM-ICU; a partir de −3, avalie delirium.",
-      "Agitação nova (+2 ou mais) é sintoma: descarte dor, hipoxemia, retenção urinária, abstinência e delirium antes de aumentar sedativos."
-    ],
     "sources": [
       [
         "Sessler CN et al. The Richmond Agitation-Sedation Scale: validity and reliability in adult intensive care unit patients. Am J Respir Crit Care Med, 2002.",
@@ -197,51 +110,6 @@
         }
       ]
     ],
-    "kind": "Escore",
-    "config": {
-      "unit": "na RASS",
-      "label": "RASS",
-      "fields": [
-        [
-          "rass",
-          "sel",
-          0
-        ]
-      ],
-      "bands": [
-        [
-          -5,
-          "high",
-          "Sedação profunda ou coma (RASS −4 a −5)",
-          "Reavalie a necessidade de sedação profunda; não é possível avaliar delirium (CAM-ICU)."
-        ],
-        [
-          -3,
-          "mid",
-          "Sedação moderada (RASS −3)",
-          "Acima da faixa usual de sedação leve: considere reduzir a sedação se não houver indicação de sedação profunda."
-        ],
-        [
-          -2,
-          "low",
-          "Sedação leve a alerta e calmo (RASS −2 a 0)",
-          "Faixa-alvo habitual da sedação leve (PADIS 2018). Avalie delirium com o CAM-ICU."
-        ],
-        [
-          1,
-          "mid",
-          "Inquieto (RASS +1)",
-          "Procure causas: dor, hipóxia, bexiga cheia, abstinência, delirium."
-        ],
-        [
-          2,
-          "high",
-          "Agitado a combativo (RASS +2 a +4)",
-          "Garanta a segurança do paciente e dos dispositivos; trate a causa e considere sedação."
-        ]
-      ]
-    },
-    "clinicalReview": "pending",
     "arithmeticTest": {
       "status": "passed",
       "testedAt": "2026-09-25",
@@ -250,17 +118,463 @@
       "failures": []
     },
     "independentArithmeticTest": {
-      "status": "not-tested",
-      "testedAt": null,
-      "total": 0,
-      "passed": 0,
-      "cases": []
+      "status": "passed",
+      "testedAt": "2026-10-04T20:21:47.355Z",
+      "total": 10,
+      "passed": 10,
+      "sourceRowCount": 10,
+      "uniqueApiInputCount": 10,
+      "sourceContextCount": 10,
+      "embeddedCasesAreSubset": true,
+      "embeddedCaseCount": 4,
+      "scope": "All ten assigned ordinal scores only; no cutoff recommendations/clinical classification.",
+      "caseStorage": {
+        "mode": "complete-downloadable-bank-with-inline-subset",
+        "file": "independent-source-cases.json",
+        "sha256": "ea2114d59ee34cbe70c82e301e7a70d7f0ad387f19f838c73210e5bce7aa038e",
+        "total": 10,
+        "bankRowCount": 10,
+        "uniqueApiInputCount": 10,
+        "sourceContextCount": 10,
+        "expectedEvidence": [
+          {
+            "file": "reports/review-20261003/six-neuromotor-independent-expectations-final29.json",
+            "sha256": "f4dad20a9ba35cd815eb875728013287b62d5259b3f73156a9a1a00fb4a094b4"
+          },
+          {
+            "file": "reports/review-20261003/six-neuromotor-primary-source-review-final29.json",
+            "sha256": "3be675e6df346996e30e38384bd1d8af72f23b9678413687b5c26881cff563d0"
+          }
+        ],
+        "obtainedEvidence": {
+          "file": "reports/review-20261003/six-neuromotor-independent-source-check-final29.json",
+          "sha256": "b0d0841319b5a2323ff6d6939358aa9c00bb935fb46c0cbc64138974a521d736"
+        },
+        "packagingRequirement": "Byte-exact complete raw-only bank; source28 and any later source/rubric changes are composed separately."
+      },
+      "sources": [
+        {
+          "review": {
+            "file": "reports/review-20261003/six-neuromotor-primary-source-review-final29.json",
+            "sha256": "3be675e6df346996e30e38384bd1d8af72f23b9678413687b5c26881cff563d0"
+          },
+          "item": {
+            "id": "rass",
+            "verifiedEdition": "Officialdeveloper2023resource card citing Sessler2002/Ely2003",
+            "sourceIds": [
+              "rass-developer-2023"
+            ],
+            "verified": "Ten selected scores−5 to+4; distinguish voice-contact−1/−2, voice without eyecontact−3, physicalstimulation−4, noresponse−5. CAM-ICU assessment is separate.",
+            "unresolved": [
+              "Both officialcard and current local labels use >10s/<10s; exactly10s is not adjudicated here.",
+              "Original full2002/2003 paper/administration sequence not obtained; current developercard read is explicit.",
+              "Selectedcode preservation does not certify timing, bedside examination, delirium classification or sedation treatment."
+            ],
+            "findings": [],
+            "proofScope": "All ten assigned ordinal scores only; no cutoff recommendations/clinical classification.",
+            "clinicalApproval": "not-performed",
+            "professionalLanguageApproval": "not-performed",
+            "rightsApproval": "not-performed",
+            "fullMethodConformance": "not-performed",
+            "calculatorImportsPerformed": false,
+            "sourceBinding": {
+              "id": "rass",
+              "recordSha256": "5eacd133c64f5e12327bb6bb145610cfd07ef0db3d94800c706a21c4e9ae2c0c",
+              "frozenRecordFile": "reports/review-20261003/six-neuromotor-frozen-source-inputs-final29/selected-records/rass.json",
+              "frozenRecordSha256": "d7c14ee4676f8fc2ce4143c4abc79ca2912a6172ef7ea8aca0fb65a466ef0064",
+              "methodVersion": "RASS/Sessler 2002:Ely 2003:−5 a+4, observação→voz→estímulo físico",
+              "currentMethodSource": "https://pubmed.ncbi.nlm.nih.gov/12421743/",
+              "adapters": [
+                {
+                  "file": "apps/website/private/tool-code/rass/calculator.js",
+                  "sha256": "1760c42d707f257c03a18c41a72cb95fbb42c905d6fd22bbf54c36f2151a6a23",
+                  "bytes": 5610,
+                  "frozenFile": "reports/review-20261003/six-neuromotor-frozen-source-inputs-final29/apps/website/private/tool-code/rass/calculator.js",
+                  "reason": "Opaque pre-oracle adapter capture; calculator not imported"
+                },
+                {
+                  "file": "apps/dashboard/private/tool-code/rass/calculator.js",
+                  "sha256": "1760c42d707f257c03a18c41a72cb95fbb42c905d6fd22bbf54c36f2151a6a23",
+                  "bytes": 5610,
+                  "frozenFile": "reports/review-20261003/six-neuromotor-frozen-source-inputs-final29/apps/dashboard/private/tool-code/rass/calculator.js",
+                  "reason": "Opaque pre-oracle adapter capture; calculator not imported"
+                },
+                {
+                  "file": "apps/command-center/private/tool-code/rass/calculator.js",
+                  "sha256": "1760c42d707f257c03a18c41a72cb95fbb42c905d6fd22bbf54c36f2151a6a23",
+                  "bytes": 5610,
+                  "frozenFile": "reports/review-20261003/six-neuromotor-frozen-source-inputs-final29/apps/command-center/private/tool-code/rass/calculator.js",
+                  "reason": "Opaque pre-oracle adapter capture; calculator not imported"
+                }
+              ]
+            }
+          },
+          "sources": [
+            {
+              "id": "rass-developer-2023",
+              "url": "https://cdn.prod.website-files.com/5b0849daec50243a0a1e5e0c/64494441346bd5e969493d93_CAM-ICU-tools-2023_rass.pdf",
+              "file": "C:\\FGX Dev\\Elucenia\\ELUCENIA\\reports\\review-20261003\\six-neuromotor-primary-final29\\rass-developer-2023.pdf",
+              "sha256": "8e8de784477aeb23e0c1a3178a11861da823a2b3bd531d28678ec74d905d2607",
+              "bytes": 150281,
+              "visualPagesRead": [
+                1
+              ],
+              "readScope": "Current official developer CAM-ICU/RASS resource card; ten scores, voice/touch descriptors, >10/<10second signs and CAM-ICU/stop distinction visually read. Original2002/2003 full articles not read.",
+              "originalFullArticleRead": false
+            }
+          ]
+        }
+      ],
+      "evidencePath": "reports/review-20261003/six-neuromotor-independent-source-check-final29.json",
+      "evidenceSha256": "b0d0841319b5a2323ff6d6939358aa9c00bb935fb46c0cbc64138974a521d736",
+      "independentPeer": {
+        "status": "passed",
+        "file": "reports/review-20261003/six-neuromotor-independent-peer-verify-final29-r2.json",
+        "sha256": "cdf0b3a3deb4648d854db79cdf7f3d5c04f6e5f665e864940ee6e14cd450ca47",
+        "scope": "Independent bounded witnesses from six personally read primary/official targeted sources. Degree sum plus36assigned ordinal codes only; no clinical feature-to-grade classification, ordinal spacing, risk/cutoffs, diagnoses, clinical/professional language or rights approval. Only156own witnesses are within the explicit current local schema;42out-of-schema own magnitude witnesses are separate local contract rejection checks, not source arithmetic passes.",
+        "checks": 27198,
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed",
+        "sourceRightsApproval": "not-performed",
+        "fullMethodConformance": "not-performed",
+        "packagingPeer": "pending"
+      },
+      "freshAdapterExecutions": 30,
+      "freshVmExecutions": 30,
+      "actualBrowserEvidenceScope": "Original source29 actual isolated Chromium 10x3 raw-only captures retained, not rerun here or served portal clinical evidence.",
+      "implementations": [
+        {
+          "file": "apps/website/private/tool-code/rass/calculator.js",
+          "sha256": "1760c42d707f257c03a18c41a72cb95fbb42c905d6fd22bbf54c36f2151a6a23",
+          "app": "website"
+        },
+        {
+          "file": "apps/dashboard/private/tool-code/rass/calculator.js",
+          "sha256": "1760c42d707f257c03a18c41a72cb95fbb42c905d6fd22bbf54c36f2151a6a23",
+          "app": "dashboard"
+        },
+        {
+          "file": "apps/command-center/private/tool-code/rass/calculator.js",
+          "sha256": "1760c42d707f257c03a18c41a72cb95fbb42c905d6fd22bbf54c36f2151a6a23",
+          "app": "command-center"
+        }
+      ],
+      "qualifications": [
+        "All ten assigned ordinal scores only; no cutoff recommendations/clinical classification.",
+        "Both officialcard and current local labels use >10s/<10s; exactly10s is not adjudicated here.",
+        "Original full2002/2003 paper/administration sequence not obtained; current developercard read is explicit.",
+        "Selectedcode preservation does not certify timing, bedside examination, delirium classification or sedation treatment.",
+        "This numeric receipt does not certify observation-to-grade assignment, administration, diagnostic/severity interpretations, prognosis, measurement, original full-method equivalence, professional/official translation or source-rights permission.",
+        "Clinical levels/main labels/verdicts are intentionally excluded from this bank. Only the explicitly exposed selected raw field is projected; no source fixture was used as an oracle.",
+        "The five ordinal methods preserve already-selected grade codes only. Their clinical scoring rubrics are not established by successful identity tests.",
+        "Original source29 Node/VM/actual isolatedChromium observations remain in the immutable donor report. This preparation adds fresh Node/VM raw-only replays; it is not a served page/API/React or deployment gate.",
+        "Source28 banks are separately owned and not included in this prospective27→29 candidate. Compose evidence per ID and recompute aggregate counters, never overwrite whole stale catalogs."
+      ],
+      "clinicalApproval": "not-performed",
+      "professionalLanguageApproval": "not-performed",
+      "sourceRightsApproval": "not-performed",
+      "fullMethodConformance": "not-performed",
+      "publicCandidateBankOmitted": true
+    },
+    "methodVersion": "RASS/Sessler 2002:Ely 2003:−5 a+4, observação→voz→estímulo físico",
+    "implementationVersion": "rass@native-2026-10-03+1760c42d707f",
+    "currentMethodSource": "https://pubmed.ncbi.nlm.nih.gov/12421743/",
+    "versionEvidence": {
+      "status": "variant-and-source-edition-recorded",
+      "checkedAt": "2026-10-03",
+      "implementedVariant": "Avaliação em 3 passos: (1) observe o paciente por 30 s (0 a +4); (2) se não estiver alerta, chame-o pelo nome e peça que olhe para você (−1 a −3); (3) sem resposta à voz, estimule fisicamente balançando o ombro ou esfregando o esterno (−4 a −5).",
+      "inputContract": {
+        "fields": [
+          {
+            "key": "rass",
+            "label": "Nível observado",
+            "type": "sel",
+            "optional": false,
+            "options": {
+              "0": "0 · Alerta e calmo",
+              "1": "+1 · Inquieto: ansioso, movimentos não agressivos",
+              "2": "+2 · Agitado: movimentos frequentes sem propósito, briga com o ventilador",
+              "3": "+3 · Muito agitado: puxa ou remove tubos e cateteres; agressivo",
+              "4": "+4 · Combativo: violento, perigo imediato para a equipe",
+              "-1": "−1 · Sonolento: desperta à voz e mantém contato visual por mais de 10 s",
+              "-2": "−2 · Sedação leve: desperta à voz, contato visual por menos de 10 s",
+              "-3": "−3 · Sedação moderada: movimento ou abertura ocular à voz, sem contato visual",
+              "-4": "−4 · Sedação profunda: sem resposta à voz; movimento ao estímulo físico",
+              "-5": "−5 · Não despertável: sem resposta à voz nem ao estímulo físico"
+            }
+          }
+        ],
+        "hash": "65579b967c43317bd63b3ceaa3ec516f2d731e9f6f0a99e256ab10d73d06d6fc"
+      },
+      "sourceEditions": [
+        {
+          "citation": "Sessler CN et al. The Richmond Agitation-Sedation Scale: validity and reliability in adult intensive care unit patients. Am J Respir Crit Care Med, 2002.",
+          "url": "https://doi.org/10.1164/rccm.2107138",
+          "class": "primary-publication-abstract-or-metadata-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "The Richmond Agitation-Sedation Scale: validity and reliability in adult intensive care unit patients.",
+            "year": "2002",
+            "firstPublicationDate": "2002-11-01",
+            "doi": "10.1164/rccm.2107138",
+            "pmid": "12421743",
+            "journal": "American journal of respiratory and critical care medicine",
+            "authors": "Sessler CN, Gosnell MS, Grap MJ, Brophy GM, O'Neal PV, Keane KA, Tesoro EP, Elswick RK."
+          },
+          "primaryPublicationUrl": "https://pubmed.ncbi.nlm.nih.gov/12421743/",
+          "abstractAvailable": true,
+          "fullTextSha256": null,
+          "abstractSha256": "24142f59787892b8c705a0a60e9332bcec11004fb9f484495f15cd6665f8aea9",
+          "matchedBy": "exact-DOI-or-PMID"
+        },
+        {
+          "citation": "Ely EW et al. Monitoring sedation status over time in ICU patients: reliability and validity of the Richmond Agitation-Sedation Scale (RASS). JAMA, 2003.",
+          "url": "https://doi.org/10.1001/jama.289.22.2983",
+          "class": "primary-publication-abstract-or-metadata-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "Monitoring sedation status over time in ICU patients: reliability and validity of the Richmond Agitation-Sedation Scale (RASS).",
+            "year": "2003",
+            "firstPublicationDate": "2003-06-01",
+            "doi": "10.1001/jama.289.22.2983",
+            "pmid": "12799407",
+            "journal": "JAMA",
+            "authors": "Ely EW, Truman B, Shintani A, Thomason JW, Wheeler AP, Gordon S, Francis J, Speroff T, Gautam S, Margolin R, Sessler CN, Dittus RS, Bernard GR."
+          },
+          "primaryPublicationUrl": "https://pubmed.ncbi.nlm.nih.gov/12799407/",
+          "abstractAvailable": true,
+          "fullTextSha256": null,
+          "abstractSha256": "9118825e217b0b4c9d1ab92d557b50c9e914ca05fb413f3e76e5cd2363519006",
+          "matchedBy": "exact-DOI-or-PMID"
+        },
+        {
+          "citation": "Devlin JW et al. Clinical practice guidelines for the prevention and management of pain, agitation/sedation, delirium, immobility, and sleep disruption in adult patients in the ICU. Crit Care Med, 2018.",
+          "url": "https://doi.org/10.1097/CCM.0000000000003299",
+          "class": "primary-publication-abstract-or-metadata-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "Clinical Practice Guidelines for the Prevention and Management of Pain, Agitation/Sedation, Delirium, Immobility, and Sleep Disruption in Adult Patients in the ICU.",
+            "year": "2018",
+            "firstPublicationDate": "2018-09-01",
+            "doi": "10.1097/ccm.0000000000003299",
+            "pmid": "30113379",
+            "journal": "Critical care medicine",
+            "authors": "Devlin JW, Skrobik Y, Gélinas C, Needham DM, Slooter AJC, Pandharipande PP, Watson PL, Weinhouse GL, Nunnally ME, Rochwerg B, Balas MC, van den Boogaard M, Bosma KJ, Brummel NE, Chanques G, Denehy L, Drouot X, Fraser GL, Harris JE, Joffe AM, Kho ME, Kress JP, Lanphere JA, McKinley S, Neufeld KJ, Pisani MA, Payen JF, Pun BT, Puntillo KA, Riker RR, Robinson BRH, Shehabi Y, Szumita PM, Winkelman C, Centofanti JE, Price C, Nikayin S, Misak CJ, Flood PD, Kiedrowski K, Alhazzani W."
+          },
+          "primaryPublicationUrl": "https://pubmed.ncbi.nlm.nih.gov/30113379/",
+          "abstractAvailable": true,
+          "fullTextSha256": null,
+          "abstractSha256": "3bd54e5737fcaa086ffbf7467164c4055a435dae92e0d3760ac2897b133095d2",
+          "matchedBy": "exact-DOI-or-PMID"
+        }
+      ],
+      "publicationEditionConfirmed": true,
+      "fullFormulaConformanceReviewed": false,
+      "formulaConformance": "Not established by bibliographic identity or automatic full-text retrieval; retain independent arithmetic and clinical review as separate evidence.",
+      "independentArithmetic": {
+        "status": "passed",
+        "testedAt": "2026-10-04T20:21:47.355Z",
+        "total": 10,
+        "passed": 10,
+        "sourceRowCount": 10,
+        "uniqueApiInputCount": 10,
+        "sourceContextCount": 10,
+        "embeddedCasesAreSubset": true,
+        "embeddedCaseCount": 4,
+        "scope": "All ten assigned ordinal scores only; no cutoff recommendations/clinical classification.",
+        "caseStorage": {
+          "mode": "complete-downloadable-bank-with-inline-subset",
+          "file": "independent-source-cases.json",
+          "sha256": "ea2114d59ee34cbe70c82e301e7a70d7f0ad387f19f838c73210e5bce7aa038e",
+          "total": 10,
+          "bankRowCount": 10,
+          "uniqueApiInputCount": 10,
+          "sourceContextCount": 10,
+          "expectedEvidence": [
+            {
+              "file": "reports/review-20261003/six-neuromotor-independent-expectations-final29.json",
+              "sha256": "f4dad20a9ba35cd815eb875728013287b62d5259b3f73156a9a1a00fb4a094b4"
+            },
+            {
+              "file": "reports/review-20261003/six-neuromotor-primary-source-review-final29.json",
+              "sha256": "3be675e6df346996e30e38384bd1d8af72f23b9678413687b5c26881cff563d0"
+            }
+          ],
+          "obtainedEvidence": {
+            "file": "reports/review-20261003/six-neuromotor-independent-source-check-final29.json",
+            "sha256": "b0d0841319b5a2323ff6d6939358aa9c00bb935fb46c0cbc64138974a521d736"
+          },
+          "packagingRequirement": "Byte-exact complete raw-only bank; source28 and any later source/rubric changes are composed separately."
+        },
+        "sources": [
+          {
+            "review": {
+              "file": "reports/review-20261003/six-neuromotor-primary-source-review-final29.json",
+              "sha256": "3be675e6df346996e30e38384bd1d8af72f23b9678413687b5c26881cff563d0"
+            },
+            "item": {
+              "id": "rass",
+              "verifiedEdition": "Officialdeveloper2023resource card citing Sessler2002/Ely2003",
+              "sourceIds": [
+                "rass-developer-2023"
+              ],
+              "verified": "Ten selected scores−5 to+4; distinguish voice-contact−1/−2, voice without eyecontact−3, physicalstimulation−4, noresponse−5. CAM-ICU assessment is separate.",
+              "unresolved": [
+                "Both officialcard and current local labels use >10s/<10s; exactly10s is not adjudicated here.",
+                "Original full2002/2003 paper/administration sequence not obtained; current developercard read is explicit.",
+                "Selectedcode preservation does not certify timing, bedside examination, delirium classification or sedation treatment."
+              ],
+              "findings": [],
+              "proofScope": "All ten assigned ordinal scores only; no cutoff recommendations/clinical classification.",
+              "clinicalApproval": "not-performed",
+              "professionalLanguageApproval": "not-performed",
+              "rightsApproval": "not-performed",
+              "fullMethodConformance": "not-performed",
+              "calculatorImportsPerformed": false,
+              "sourceBinding": {
+                "id": "rass",
+                "recordSha256": "5eacd133c64f5e12327bb6bb145610cfd07ef0db3d94800c706a21c4e9ae2c0c",
+                "frozenRecordFile": "reports/review-20261003/six-neuromotor-frozen-source-inputs-final29/selected-records/rass.json",
+                "frozenRecordSha256": "d7c14ee4676f8fc2ce4143c4abc79ca2912a6172ef7ea8aca0fb65a466ef0064",
+                "methodVersion": "RASS/Sessler 2002:Ely 2003:−5 a+4, observação→voz→estímulo físico",
+                "currentMethodSource": "https://pubmed.ncbi.nlm.nih.gov/12421743/",
+                "adapters": [
+                  {
+                    "file": "apps/website/private/tool-code/rass/calculator.js",
+                    "sha256": "1760c42d707f257c03a18c41a72cb95fbb42c905d6fd22bbf54c36f2151a6a23",
+                    "bytes": 5610,
+                    "frozenFile": "reports/review-20261003/six-neuromotor-frozen-source-inputs-final29/apps/website/private/tool-code/rass/calculator.js",
+                    "reason": "Opaque pre-oracle adapter capture; calculator not imported"
+                  },
+                  {
+                    "file": "apps/dashboard/private/tool-code/rass/calculator.js",
+                    "sha256": "1760c42d707f257c03a18c41a72cb95fbb42c905d6fd22bbf54c36f2151a6a23",
+                    "bytes": 5610,
+                    "frozenFile": "reports/review-20261003/six-neuromotor-frozen-source-inputs-final29/apps/dashboard/private/tool-code/rass/calculator.js",
+                    "reason": "Opaque pre-oracle adapter capture; calculator not imported"
+                  },
+                  {
+                    "file": "apps/command-center/private/tool-code/rass/calculator.js",
+                    "sha256": "1760c42d707f257c03a18c41a72cb95fbb42c905d6fd22bbf54c36f2151a6a23",
+                    "bytes": 5610,
+                    "frozenFile": "reports/review-20261003/six-neuromotor-frozen-source-inputs-final29/apps/command-center/private/tool-code/rass/calculator.js",
+                    "reason": "Opaque pre-oracle adapter capture; calculator not imported"
+                  }
+                ]
+              }
+            },
+            "sources": [
+              {
+                "id": "rass-developer-2023",
+                "url": "https://cdn.prod.website-files.com/5b0849daec50243a0a1e5e0c/64494441346bd5e969493d93_CAM-ICU-tools-2023_rass.pdf",
+                "file": "C:\\FGX Dev\\Elucenia\\ELUCENIA\\reports\\review-20261003\\six-neuromotor-primary-final29\\rass-developer-2023.pdf",
+                "sha256": "8e8de784477aeb23e0c1a3178a11861da823a2b3bd531d28678ec74d905d2607",
+                "bytes": 150281,
+                "visualPagesRead": [
+                  1
+                ],
+                "readScope": "Current official developer CAM-ICU/RASS resource card; ten scores, voice/touch descriptors, >10/<10second signs and CAM-ICU/stop distinction visually read. Original2002/2003 full articles not read.",
+                "originalFullArticleRead": false
+              }
+            ]
+          }
+        ],
+        "evidencePath": "reports/review-20261003/six-neuromotor-independent-source-check-final29.json",
+        "evidenceSha256": "b0d0841319b5a2323ff6d6939358aa9c00bb935fb46c0cbc64138974a521d736",
+        "independentPeer": {
+          "status": "passed",
+          "file": "reports/review-20261003/six-neuromotor-independent-peer-verify-final29-r2.json",
+          "sha256": "cdf0b3a3deb4648d854db79cdf7f3d5c04f6e5f665e864940ee6e14cd450ca47",
+          "scope": "Independent bounded witnesses from six personally read primary/official targeted sources. Degree sum plus36assigned ordinal codes only; no clinical feature-to-grade classification, ordinal spacing, risk/cutoffs, diagnoses, clinical/professional language or rights approval. Only156own witnesses are within the explicit current local schema;42out-of-schema own magnitude witnesses are separate local contract rejection checks, not source arithmetic passes.",
+          "checks": 27198,
+          "clinicalApproval": "not-performed",
+          "professionalLanguageApproval": "not-performed",
+          "sourceRightsApproval": "not-performed",
+          "fullMethodConformance": "not-performed",
+          "packagingPeer": "pending"
+        },
+        "freshAdapterExecutions": 30,
+        "freshVmExecutions": 30,
+        "actualBrowserEvidenceScope": "Original source29 actual isolated Chromium 10x3 raw-only captures retained, not rerun here or served portal clinical evidence.",
+        "implementations": [
+          {
+            "file": "apps/website/private/tool-code/rass/calculator.js",
+            "sha256": "1760c42d707f257c03a18c41a72cb95fbb42c905d6fd22bbf54c36f2151a6a23",
+            "app": "website"
+          },
+          {
+            "file": "apps/dashboard/private/tool-code/rass/calculator.js",
+            "sha256": "1760c42d707f257c03a18c41a72cb95fbb42c905d6fd22bbf54c36f2151a6a23",
+            "app": "dashboard"
+          },
+          {
+            "file": "apps/command-center/private/tool-code/rass/calculator.js",
+            "sha256": "1760c42d707f257c03a18c41a72cb95fbb42c905d6fd22bbf54c36f2151a6a23",
+            "app": "command-center"
+          }
+        ],
+        "qualifications": [
+          "All ten assigned ordinal scores only; no cutoff recommendations/clinical classification.",
+          "Both officialcard and current local labels use >10s/<10s; exactly10s is not adjudicated here.",
+          "Original full2002/2003 paper/administration sequence not obtained; current developercard read is explicit.",
+          "Selectedcode preservation does not certify timing, bedside examination, delirium classification or sedation treatment.",
+          "This numeric receipt does not certify observation-to-grade assignment, administration, diagnostic/severity interpretations, prognosis, measurement, original full-method equivalence, professional/official translation or source-rights permission.",
+          "Clinical levels/main labels/verdicts are intentionally excluded from this bank. Only the explicitly exposed selected raw field is projected; no source fixture was used as an oracle.",
+          "The five ordinal methods preserve already-selected grade codes only. Their clinical scoring rubrics are not established by successful identity tests.",
+          "Original source29 Node/VM/actual isolatedChromium observations remain in the immutable donor report. This preparation adds fresh Node/VM raw-only replays; it is not a served page/API/React or deployment gate.",
+          "Source28 banks are separately owned and not included in this prospective27→29 candidate. Compose evidence per ID and recompute aggregate counters, never overwrite whole stale catalogs."
+        ],
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed",
+        "sourceRightsApproval": "not-performed",
+        "fullMethodConformance": "not-performed",
+        "publicCandidateBankOmitted": true
+      },
+      "clinicalApproval": "not-performed",
+      "translationApproval": "not-performed",
+      "releaseApproval": "not-performed",
+      "implementationHash": "1760c42d707f257c03a18c41a72cb95fbb42c905d6fd22bbf54c36f2151a6a23"
+    },
+    "limits": "A RASS de 2002 foi estudada para agitação e sedação em adultos de UTI, com e sem ventilação ou sedativos, e envolveu avaliadores treinados. O resultado depende de observação e aplicação apropriadas; não é, isoladamente, diagnóstico de delirium nem prescrição de dose de sedativo. Uso pediátrico e protocolos de tratamento requerem fontes próprias.",
+    "sourceLimitEvidence": {
+      "checkedAt": "2026-10-04T02:52:02.824Z",
+      "scope": "Targeted source reading and authorial documentation, not full method or clinical approval.",
+      "sourceReviewFile": "remaining-native-population-limits-review.json",
+      "sourceReviewSha256": "ba61a9b120a338c518c34ba9f324558b12580e7f5371ea81304b030b45ea44a5",
+      "readingOutcome": "review-outcome-recorded",
+      "unresolved": [
+        "Resumo não confirma diagnóstico de delirium, doses/ajustes automáticos de sedação, pediatria ou todas as instruções de voz/estímulo."
+      ],
+      "fullMethodConformanceReviewed": false,
+      "clinicalApproval": "not-performed",
+      "professionalLanguageApproval": "not-performed"
     }
   },
-  "review": {
-    "status": "needs-review",
-    "reason": "Revisão documental e clínica independente pendente.",
-    "clinicalValidation": "not-performed"
+  "currentSource": {
+    "file": "apps/website/private/tool-code/rass/calculator.js",
+    "bytes": 5610,
+    "sha256": "1760c42d707f257c03a18c41a72cb95fbb42c905d6fd22bbf54c36f2151a6a23"
   },
-  "clinicalValidation": "not-performed"
+  "sourceToolSha256": "b72ebc6f3c2509fe2f2b4aef23ed446f5a54a0e0c63f53040a5237a7d425d45c",
+  "omittedFullReferenceBanks": [
+    {
+      "rows": 4,
+      "sha256": "8b94ece5d70f8fe1b21281f908c0cfa8b0b17deb7f2daccbe77dac0d0b2d5a38",
+      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+    },
+    {
+      "rows": 4,
+      "sha256": "8b94ece5d70f8fe1b21281f908c0cfa8b0b17deb7f2daccbe77dac0d0b2d5a38",
+      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+    }
+  ],
+  "clinicalApproval": "not-performed",
+  "professionalLanguageApproval": "not-performed",
+  "sourceRightsApproval": "not-performed"
 }
