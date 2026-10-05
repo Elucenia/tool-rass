@@ -1,0 +1,1115 @@
+{
+  "schema": "elucenia-native-tool-actual-r6-local-HTTP-subset-r5",
+  "id": "rass",
+  "sourceReceipt": {
+    "file": "reports/review-20261005-completion/deploy-lock/r6-all-calculators-http-results.json",
+    "bytes": 7105396,
+    "sha256": "c0b1e4dc320ce807e78c0444e629c1269b545b6e2ac87c265d896073d8c34ecb"
+  },
+  "servedBuildId": "jN-2wbRrarMjYPwdPnRHh",
+  "checker": {
+    "file": "reports/review-20261005-completion/deploy-lock/verify-r6-all-calculators-http.cjs",
+    "sha256": "92411a9e01fe36e1bf380c3336f2171bdb523a02ff09683da75927b12b33b3fa",
+    "bytes": 20735
+  },
+  "health": {
+    "url": "http://127.0.0.1:3067/api/health",
+    "startedAt": "2026-10-05T17:35:43.039Z",
+    "status": 200,
+    "headers": {
+      "contentType": "application/json",
+      "retryAfter": null,
+      "cacheControl": "no-store",
+      "nosniff": "nosniff"
+    },
+    "body": {
+      "status": "ok",
+      "application": "ELUCENIA",
+      "framework": "Next.js",
+      "version": "1.0.0"
+    },
+    "responseSha256": "65f95645e7826371eb2d9d3f96e0fed52ea4b88c77203f0cf2511769e57cd108",
+    "bytes": 80,
+    "elapsedMs": 27.345699999999994
+  },
+  "identity": {
+    "url": "http://127.0.0.1:3067/_next/data/jN-2wbRrarMjYPwdPnRHh/en/tools.json",
+    "startedAt": "2026-10-05T17:35:43.068Z",
+    "status": 200,
+    "headers": {
+      "contentType": "application/json; charset=utf-8",
+      "retryAfter": null,
+      "cacheControl": "s-maxage=31536000",
+      "nosniff": "nosniff"
+    },
+    "responseSha256": "404601e2c283a588a2f41af4feb5113d1993f76cc22f73a7b8ef4f5d17a82fa8",
+    "bytes": 103853,
+    "elapsedMs": 14.542600000000007,
+    "semanticMatchWithCompiledCatalog": true
+  },
+  "sourceCalculator": {
+    "file": "deliveries/elucenia-next-hostinger-r6/private/tool-code/rass/calculator.js",
+    "sha256": "1760c42d707f257c03a18c41a72cb95fbb42c905d6fd22bbf54c36f2151a6a23",
+    "bytes": 5610
+  },
+  "sourceCalculatorMatchesCurrentCandidate": true,
+  "toolStatus": {
+    "cases": 6,
+    "replayed": 6,
+    "passed": 6,
+    "failed": 0,
+    "status": "passed"
+  },
+  "cases": [
+    {
+      "id": "rass",
+      "kind": "native-source-reference",
+      "index": 0,
+      "name": "RASS −4: sedação profunda",
+      "originalInput": {
+        "rass": "-4"
+      },
+      "input": {
+        "rass": "-4"
+      },
+      "amendments": [],
+      "expected": {
+        "score": -4,
+        "level": "high"
+      },
+      "recordedResult": {
+        "main": [
+          "-4",
+          "na RASS"
+        ],
+        "label": "RASS",
+        "raw": {
+          "score": -4
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/rass/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "rass": "-4"
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/rass/calculate",
+          "startedAt": "2026-10-05T17:36:56.158Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "rass",
+              "main": [
+                "-4",
+                "na RASS"
+              ],
+              "label": "RASS",
+              "raw": {
+                "score": -4
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "04d4cac3d0b4408bdaf89d4bf086ed63df5b882748c0c2268b7e8e884ef29531",
+          "bytes": 119,
+          "elapsedMs": 4.979900000005728
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/rass/calculate",
+        "startedAt": "2026-10-05T17:36:56.158Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "rass",
+            "main": [
+              "-4",
+              "na RASS"
+            ],
+            "label": "RASS",
+            "raw": {
+              "score": -4
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "04d4cac3d0b4408bdaf89d4bf086ed63df5b882748c0c2268b7e8e884ef29531",
+        "bytes": 119,
+        "elapsedMs": 4.979900000005728
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.raw.score",
+            "expected": -4,
+            "obtained": -4,
+            "tolerance": 1e-8,
+            "difference": 0,
+            "scope": "Recorded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.score",
+            "expected": -4,
+            "obtained": -4,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "-4",
+            "obtained": "-4",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "na RASS",
+            "obtained": "na RASS",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": [
+          {
+            "key": "level",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          }
+        ]
+      },
+      "status": "passed",
+      "error": null
+    },
+    {
+      "id": "rass",
+      "kind": "native-source-reference",
+      "index": 1,
+      "name": "RASS −3: sedação moderada",
+      "originalInput": {
+        "rass": "-3"
+      },
+      "input": {
+        "rass": "-3"
+      },
+      "amendments": [],
+      "expected": {
+        "score": -3,
+        "level": "mid"
+      },
+      "recordedResult": {
+        "main": [
+          "-3",
+          "na RASS"
+        ],
+        "label": "RASS",
+        "raw": {
+          "score": -3
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/rass/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "rass": "-3"
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/rass/calculate",
+          "startedAt": "2026-10-05T17:36:56.469Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "rass",
+              "main": [
+                "-3",
+                "na RASS"
+              ],
+              "label": "RASS",
+              "raw": {
+                "score": -3
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "dac8002b57c73a7782e4b0b1fd9dcdfd3907fed48c98aad1f05acc30b531ed1a",
+          "bytes": 119,
+          "elapsedMs": 6.252500000002328
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/rass/calculate",
+        "startedAt": "2026-10-05T17:36:56.469Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "rass",
+            "main": [
+              "-3",
+              "na RASS"
+            ],
+            "label": "RASS",
+            "raw": {
+              "score": -3
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "dac8002b57c73a7782e4b0b1fd9dcdfd3907fed48c98aad1f05acc30b531ed1a",
+        "bytes": 119,
+        "elapsedMs": 6.252500000002328
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.raw.score",
+            "expected": -3,
+            "obtained": -3,
+            "tolerance": 1e-8,
+            "difference": 0,
+            "scope": "Recorded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.score",
+            "expected": -3,
+            "obtained": -3,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "-3",
+            "obtained": "-3",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "na RASS",
+            "obtained": "na RASS",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": [
+          {
+            "key": "level",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          }
+        ]
+      },
+      "status": "passed",
+      "error": null
+    },
+    {
+      "id": "rass",
+      "kind": "native-source-reference",
+      "index": 2,
+      "name": "RASS −2: limite inferior da sedação leve",
+      "originalInput": {
+        "rass": "-2"
+      },
+      "input": {
+        "rass": "-2"
+      },
+      "amendments": [],
+      "expected": {
+        "score": -2,
+        "level": "low"
+      },
+      "recordedResult": {
+        "main": [
+          "-2",
+          "na RASS"
+        ],
+        "label": "RASS",
+        "raw": {
+          "score": -2
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/rass/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "rass": "-2"
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/rass/calculate",
+          "startedAt": "2026-10-05T17:36:56.780Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "rass",
+              "main": [
+                "-2",
+                "na RASS"
+              ],
+              "label": "RASS",
+              "raw": {
+                "score": -2
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "03f70c236f41f75afd54e8fa94ed25fac76390a860cfe0d3dc66d9b0660a9b3c",
+          "bytes": 119,
+          "elapsedMs": 3.654399999999441
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/rass/calculate",
+        "startedAt": "2026-10-05T17:36:56.780Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "rass",
+            "main": [
+              "-2",
+              "na RASS"
+            ],
+            "label": "RASS",
+            "raw": {
+              "score": -2
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "03f70c236f41f75afd54e8fa94ed25fac76390a860cfe0d3dc66d9b0660a9b3c",
+        "bytes": 119,
+        "elapsedMs": 3.654399999999441
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.raw.score",
+            "expected": -2,
+            "obtained": -2,
+            "tolerance": 1e-8,
+            "difference": 0,
+            "scope": "Recorded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.score",
+            "expected": -2,
+            "obtained": -2,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "-2",
+            "obtained": "-2",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "na RASS",
+            "obtained": "na RASS",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": [
+          {
+            "key": "level",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          }
+        ]
+      },
+      "status": "passed",
+      "error": null
+    },
+    {
+      "id": "rass",
+      "kind": "native-source-reference",
+      "index": 3,
+      "name": "RASS 0: alerta e calmo",
+      "originalInput": {
+        "rass": "0"
+      },
+      "input": {
+        "rass": "0"
+      },
+      "amendments": [],
+      "expected": {
+        "score": 0,
+        "level": "low"
+      },
+      "recordedResult": {
+        "main": [
+          "0",
+          "na RASS"
+        ],
+        "label": "RASS",
+        "raw": {
+          "score": 0
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/rass/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "rass": "0"
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/rass/calculate",
+          "startedAt": "2026-10-05T17:36:57.093Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "rass",
+              "main": [
+                "0",
+                "na RASS"
+              ],
+              "label": "RASS",
+              "raw": {
+                "score": 0
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "57c355e603bae11eaf760159ebb60ab13d1b9d69e4dd1db69640598ffe32c951",
+          "bytes": 117,
+          "elapsedMs": 3.335899999990943
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/rass/calculate",
+        "startedAt": "2026-10-05T17:36:57.093Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "rass",
+            "main": [
+              "0",
+              "na RASS"
+            ],
+            "label": "RASS",
+            "raw": {
+              "score": 0
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "57c355e603bae11eaf760159ebb60ab13d1b9d69e4dd1db69640598ffe32c951",
+        "bytes": 117,
+        "elapsedMs": 3.335899999990943
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.raw.score",
+            "expected": 0,
+            "obtained": 0,
+            "tolerance": 1e-8,
+            "difference": 0,
+            "scope": "Recorded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.score",
+            "expected": 0,
+            "obtained": 0,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "0",
+            "obtained": "0",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "na RASS",
+            "obtained": "na RASS",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": [
+          {
+            "key": "level",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          }
+        ]
+      },
+      "status": "passed",
+      "error": null
+    },
+    {
+      "id": "rass",
+      "kind": "native-source-reference",
+      "index": 4,
+      "name": "RASS +1: inquieto",
+      "originalInput": {
+        "rass": "1"
+      },
+      "input": {
+        "rass": "1"
+      },
+      "amendments": [],
+      "expected": {
+        "score": 1,
+        "level": "mid"
+      },
+      "recordedResult": {
+        "main": [
+          "1",
+          "na RASS"
+        ],
+        "label": "RASS",
+        "raw": {
+          "score": 1
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/rass/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "rass": "1"
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/rass/calculate",
+          "startedAt": "2026-10-05T17:36:57.407Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "rass",
+              "main": [
+                "1",
+                "na RASS"
+              ],
+              "label": "RASS",
+              "raw": {
+                "score": 1
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "be98721000c28be8283a9def544bb17c2410bbc85466341670d86ca874119932",
+          "bytes": 117,
+          "elapsedMs": 3.564699999988079
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/rass/calculate",
+        "startedAt": "2026-10-05T17:36:57.407Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "rass",
+            "main": [
+              "1",
+              "na RASS"
+            ],
+            "label": "RASS",
+            "raw": {
+              "score": 1
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "be98721000c28be8283a9def544bb17c2410bbc85466341670d86ca874119932",
+        "bytes": 117,
+        "elapsedMs": 3.564699999988079
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.raw.score",
+            "expected": 1,
+            "obtained": 1,
+            "tolerance": 1e-8,
+            "difference": 0,
+            "scope": "Recorded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.score",
+            "expected": 1,
+            "obtained": 1,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "1",
+            "obtained": "1",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "na RASS",
+            "obtained": "na RASS",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": [
+          {
+            "key": "level",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          }
+        ]
+      },
+      "status": "passed",
+      "error": null
+    },
+    {
+      "id": "rass",
+      "kind": "native-source-reference",
+      "index": 5,
+      "name": "RASS +3: muito agitado",
+      "originalInput": {
+        "rass": "3"
+      },
+      "input": {
+        "rass": "3"
+      },
+      "amendments": [],
+      "expected": {
+        "score": 3,
+        "level": "high"
+      },
+      "recordedResult": {
+        "main": [
+          "3",
+          "na RASS"
+        ],
+        "label": "RASS",
+        "raw": {
+          "score": 3
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/rass/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "rass": "3"
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/rass/calculate",
+          "startedAt": "2026-10-05T17:36:57.717Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "rass",
+              "main": [
+                "3",
+                "na RASS"
+              ],
+              "label": "RASS",
+              "raw": {
+                "score": 3
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "3d5cb15ee1e378b514f3bb95e8c9c5769b71fc1bcc60e73a734d8534cb7bc916",
+          "bytes": 117,
+          "elapsedMs": 5.711200000005192
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/rass/calculate",
+        "startedAt": "2026-10-05T17:36:57.717Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "rass",
+            "main": [
+              "3",
+              "na RASS"
+            ],
+            "label": "RASS",
+            "raw": {
+              "score": 3
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "3d5cb15ee1e378b514f3bb95e8c9c5769b71fc1bcc60e73a734d8534cb7bc916",
+        "bytes": 117,
+        "elapsedMs": 5.711200000005192
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.raw.score",
+            "expected": 3,
+            "obtained": 3,
+            "tolerance": 1e-8,
+            "difference": 0,
+            "scope": "Recorded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.score",
+            "expected": 3,
+            "obtained": 3,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "3",
+            "obtained": "3",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "na RASS",
+            "obtained": "na RASS",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": [
+          {
+            "key": "level",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          }
+        ]
+      },
+      "status": "passed",
+      "error": null
+    }
+  ],
+  "scope": {
+    "syntheticDataOnly": true,
+    "applicationModuleImports": 0,
+    "browserInteractions": 0,
+    "newIndependentOracles": 0,
+    "nativeSourceReferenceCases": 882,
+    "additionalDecimalCases": 4,
+    "predictProstateHasSeparateFullCurveOracleReplay": true,
+    "clinicalApproval": false,
+    "professionalLanguageApproval": false,
+    "populationValidation": false,
+    "hostingerDeploymentVerified": false,
+    "actualHTTPExecution": true,
+    "standaloneNodeServer": true,
+    "nodeVersion": "v22.18.0",
+    "noNewClinicalOrProfessionalApproval": true,
+    "pubmedResourceIsNotCalculatorAndNotIncludedIn222": true,
+    "description": "All 882 existing reference cases across the 218 native calculators plus four existing Decimal50 examples, executed via HTTP against the final local r6 standalone build. Raw precise source-audit comparisons are transport regressions, not independent clinical or full-method validation."
+  },
+  "clinicalApproval": false,
+  "professionalLanguageApproval": false,
+  "newIndependentOracle": false,
+  "actualBrowserJourney": false,
+  "hostingerDeploymentVerified": false
+}
