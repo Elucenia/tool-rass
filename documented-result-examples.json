@@ -1,0 +1,1047 @@
+{
+  "id": "rass",
+  "implementationVersion": "rass@native-2026-10-05+0a333f51dff6",
+  "scope": "Rendered current output against the same source method; not an independent numerical/clinical oracle",
+  "locales": {
+    "pt-BR": [
+      {
+        "name": "RASS −4: sedação profunda",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Sedação profunda ou coma (RASS −4 a −5)",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "Reavalie a necessidade de sedação profunda; não é possível avaliar delirium (CAM-ICU).",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "RASS −3: sedação moderada",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Sedação moderada (RASS −3)",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "Acima da faixa usual de sedação leve: considere reduzir a sedação se não houver indicação de sedação profunda.",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "RASS −2: limite inferior da sedação leve",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Sedação leve a alerta e calmo (RASS −2 a 0)",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "Faixa-alvo habitual da sedação leve (PADIS 2018). Avalie delirium com o CAM-ICU.",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "RASS 0: alerta e calmo",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Sedação leve a alerta e calmo (RASS −2 a 0)",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "Faixa-alvo habitual da sedação leve (PADIS 2018). Avalie delirium com o CAM-ICU.",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "RASS +1: inquieto",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Inquieto (RASS +1)",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "Procure causas: dor, hipóxia, bexiga cheia, abstinência, delirium.",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "RASS +3: muito agitado",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Agitado a combativo (RASS +2 a +4)",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "Garanta a segurança do paciente e dos dispositivos; trate a causa e considere sedação.",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "en": [
+      {
+        "name": "RASS −4: sedação profunda",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Deep sedation or coma (RASS −4 to −5)",
+            "locale": "en",
+            "template": "documented-authored-844b13eb5f3003d3f259"
+          },
+          "note": {
+            "text": "Reassess the need for deep sedation; delirium cannot be assessed (CAM-ICU).",
+            "locale": "en",
+            "template": "documented-authored-5570ae177bba995bdb38"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "RASS −3: sedação moderada",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Moderate sedation (RASS −3)",
+            "locale": "en",
+            "template": "documented-authored-b313bc9968da484ad591"
+          },
+          "note": {
+            "text": "Above the usual range of light sedation: consider reducing sedation if there is no indication for deep sedation.",
+            "locale": "en",
+            "template": "documented-authored-9c46eb7b9d13db351bcd"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "RASS −2: limite inferior da sedação leve",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Light sedation to alert and calm (RASS −2 to 0)",
+            "locale": "en",
+            "template": "documented-authored-ee29f388407851a530d6"
+          },
+          "note": {
+            "text": "Usual target range for light sedation (PADIS 2018). Assess delirium with CAM-ICU.",
+            "locale": "en",
+            "template": "documented-authored-d9b13e3cfc20369b78ef"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "RASS 0: alerta e calmo",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Light sedation to alert and calm (RASS −2 to 0)",
+            "locale": "en",
+            "template": "documented-authored-ee29f388407851a530d6"
+          },
+          "note": {
+            "text": "Usual target range for light sedation (PADIS 2018). Assess delirium with CAM-ICU.",
+            "locale": "en",
+            "template": "documented-authored-d9b13e3cfc20369b78ef"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "RASS +1: inquieto",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Restless (RASS +1)",
+            "locale": "en",
+            "template": "documented-authored-e18f8e22beac16106139"
+          },
+          "note": {
+            "text": "Look for causes: pain, hypoxia, full bladder, withdrawal, delirium.",
+            "locale": "en",
+            "template": "documented-authored-c0459b88a708d227a9ed"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "RASS +3: muito agitado",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Agitated to combative (RASS +2 to +4)",
+            "locale": "en",
+            "template": "documented-authored-6157c7fbeb0dbd8614bd"
+          },
+          "note": {
+            "text": "Ensure patient and device safety; treat the cause and consider sedation.",
+            "locale": "en",
+            "template": "documented-authored-848495dc692b9b1414f7"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "es": [
+      {
+        "name": "RASS −4: sedação profunda",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Sedación profunda o coma (RASS −4 a −5)",
+            "locale": "es",
+            "template": "documented-authored-844b13eb5f3003d3f259"
+          },
+          "note": {
+            "text": "Reevalúe la necesidad de sedación profunda; no es posible evaluar el delirium (CAM-ICU).",
+            "locale": "es",
+            "template": "documented-authored-5570ae177bba995bdb38"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "RASS −3: sedação moderada",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Sedación moderada (RASS −3)",
+            "locale": "es",
+            "template": "documented-authored-b313bc9968da484ad591"
+          },
+          "note": {
+            "text": "Por encima del rango habitual de sedación ligera: considere reducir la sedación si no hay indicación de sedación profunda.",
+            "locale": "es",
+            "template": "documented-authored-9c46eb7b9d13db351bcd"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "RASS −2: limite inferior da sedação leve",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Sedación ligera a alerta y tranquilo (RASS −2 a 0)",
+            "locale": "es",
+            "template": "documented-authored-ee29f388407851a530d6"
+          },
+          "note": {
+            "text": "Rango objetivo habitual de sedación ligera (PADIS 2018). Evalúe el delirium con CAM-ICU.",
+            "locale": "es",
+            "template": "documented-authored-d9b13e3cfc20369b78ef"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "RASS 0: alerta e calmo",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Sedación ligera a alerta y tranquilo (RASS −2 a 0)",
+            "locale": "es",
+            "template": "documented-authored-ee29f388407851a530d6"
+          },
+          "note": {
+            "text": "Rango objetivo habitual de sedación ligera (PADIS 2018). Evalúe el delirium con CAM-ICU.",
+            "locale": "es",
+            "template": "documented-authored-d9b13e3cfc20369b78ef"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "RASS +1: inquieto",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Inquieto (RASS +1)",
+            "locale": "es",
+            "template": "documented-authored-e18f8e22beac16106139"
+          },
+          "note": {
+            "text": "Busque causas: dolor, hipoxia, vejiga llena, abstinencia, delirium.",
+            "locale": "es",
+            "template": "documented-authored-c0459b88a708d227a9ed"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "RASS +3: muito agitado",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Agitado hasta combativo (RASS +2 a +4)",
+            "locale": "es",
+            "template": "documented-authored-6157c7fbeb0dbd8614bd"
+          },
+          "note": {
+            "text": "Asegure la seguridad del paciente y de los dispositivos; trate la causa y considere la sedación.",
+            "locale": "es",
+            "template": "documented-authored-848495dc692b9b1414f7"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "fr": [
+      {
+        "name": "RASS −4: sedação profunda",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Sédation profonde ou coma (RASS −4 à −5)",
+            "locale": "fr",
+            "template": "documented-authored-844b13eb5f3003d3f259"
+          },
+          "note": {
+            "text": "Réévaluer la nécessité d’une sédation profonde ; le delirium ne peut pas être évalué (CAM-ICU).",
+            "locale": "fr",
+            "template": "documented-authored-5570ae177bba995bdb38"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "RASS −3: sedação moderada",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Sédation modérée (RASS −3)",
+            "locale": "fr",
+            "template": "documented-authored-b313bc9968da484ad591"
+          },
+          "note": {
+            "text": "Au-dessus de l’intervalle habituel de sédation légère : envisagez de réduire la sédation s’il n’y a pas d’indication de sédation profonde.",
+            "locale": "fr",
+            "template": "documented-authored-9c46eb7b9d13db351bcd"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "RASS −2: limite inferior da sedação leve",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Sédation légère à éveillé et calme (RASS −2 à 0)",
+            "locale": "fr",
+            "template": "documented-authored-ee29f388407851a530d6"
+          },
+          "note": {
+            "text": "Plage cible habituelle de sédation légère (PADIS 2018). Évaluez le delirium avec le CAM-ICU.",
+            "locale": "fr",
+            "template": "documented-authored-d9b13e3cfc20369b78ef"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "RASS 0: alerta e calmo",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Sédation légère à éveillé et calme (RASS −2 à 0)",
+            "locale": "fr",
+            "template": "documented-authored-ee29f388407851a530d6"
+          },
+          "note": {
+            "text": "Plage cible habituelle de sédation légère (PADIS 2018). Évaluez le delirium avec le CAM-ICU.",
+            "locale": "fr",
+            "template": "documented-authored-d9b13e3cfc20369b78ef"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "RASS +1: inquieto",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Agité (RASS +1)",
+            "locale": "fr",
+            "template": "documented-authored-e18f8e22beac16106139"
+          },
+          "note": {
+            "text": "Recherchez les causes : douleur, hypoxie, vessie pleine, sevrage, delirium.",
+            "locale": "fr",
+            "template": "documented-authored-c0459b88a708d227a9ed"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "RASS +3: muito agitado",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Agité à combatif (RASS +2 à +4)",
+            "locale": "fr",
+            "template": "documented-authored-6157c7fbeb0dbd8614bd"
+          },
+          "note": {
+            "text": "Assurez la sécurité du patient et des dispositifs ; traitez la cause et envisagez une sédation.",
+            "locale": "fr",
+            "template": "documented-authored-848495dc692b9b1414f7"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "de": [
+      {
+        "name": "RASS −4: sedação profunda",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Tiefe Sedierung oder Koma (RASS −4 bis −5)",
+            "locale": "de",
+            "template": "documented-authored-844b13eb5f3003d3f259"
+          },
+          "note": {
+            "text": "Die Notwendigkeit einer tiefen Sedierung neu bewerten; ein Delir kann nicht beurteilt werden (CAM-ICU).",
+            "locale": "de",
+            "template": "documented-authored-5570ae177bba995bdb38"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "RASS −3: sedação moderada",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Mäßige Sedierung (RASS −3)",
+            "locale": "de",
+            "template": "documented-authored-b313bc9968da484ad591"
+          },
+          "note": {
+            "text": "Oberhalb des üblichen Bereichs der leichten Sedierung: Erwägen Sie eine Reduktion der Sedierung, wenn keine Indikation für eine tiefe Sedierung besteht.",
+            "locale": "de",
+            "template": "documented-authored-9c46eb7b9d13db351bcd"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "RASS −2: limite inferior da sedação leve",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Leichte Sedierung bis wach und ruhig (RASS −2 bis 0)",
+            "locale": "de",
+            "template": "documented-authored-ee29f388407851a530d6"
+          },
+          "note": {
+            "text": "Üblicher Zielbereich für leichte Sedierung (PADIS 2018). Beurteilen Sie ein Delir mit dem CAM-ICU.",
+            "locale": "de",
+            "template": "documented-authored-d9b13e3cfc20369b78ef"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "RASS 0: alerta e calmo",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Leichte Sedierung bis wach und ruhig (RASS −2 bis 0)",
+            "locale": "de",
+            "template": "documented-authored-ee29f388407851a530d6"
+          },
+          "note": {
+            "text": "Üblicher Zielbereich für leichte Sedierung (PADIS 2018). Beurteilen Sie ein Delir mit dem CAM-ICU.",
+            "locale": "de",
+            "template": "documented-authored-d9b13e3cfc20369b78ef"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "RASS +1: inquieto",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Unruhig (RASS +1)",
+            "locale": "de",
+            "template": "documented-authored-e18f8e22beac16106139"
+          },
+          "note": {
+            "text": "Suchen Sie nach Ursachen: Schmerzen, Hypoxie, volle Blase, Entzug, Delir.",
+            "locale": "de",
+            "template": "documented-authored-c0459b88a708d227a9ed"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "RASS +3: muito agitado",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Agitiert bis kämpferisch (RASS +2 bis +4)",
+            "locale": "de",
+            "template": "documented-authored-6157c7fbeb0dbd8614bd"
+          },
+          "note": {
+            "text": "Gewährleisten Sie die Sicherheit des Patienten und der Geräte; behandeln Sie die Ursache und erwägen Sie eine Sedierung.",
+            "locale": "de",
+            "template": "documented-authored-848495dc692b9b1414f7"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "it": [
+      {
+        "name": "RASS −4: sedação profunda",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Sedazione profonda o coma (RASS −4 a −5)",
+            "locale": "it",
+            "template": "documented-authored-844b13eb5f3003d3f259"
+          },
+          "note": {
+            "text": "Rivalutare la necessità di sedazione profonda; non è possibile valutare il delirium (CAM-ICU).",
+            "locale": "it",
+            "template": "documented-authored-5570ae177bba995bdb38"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "RASS −3: sedação moderada",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Sedazione moderata (RASS −3)",
+            "locale": "it",
+            "template": "documented-authored-b313bc9968da484ad591"
+          },
+          "note": {
+            "text": "Al di sopra dell’intervallo abituale di sedazione lieve: considerare di ridurre la sedazione se non vi è indicazione per una sedazione profonda.",
+            "locale": "it",
+            "template": "documented-authored-9c46eb7b9d13db351bcd"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "RASS −2: limite inferior da sedação leve",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Sedazione lieve fino ad allerta e tranquillo (RASS −2 a 0)",
+            "locale": "it",
+            "template": "documented-authored-ee29f388407851a530d6"
+          },
+          "note": {
+            "text": "Intervallo obiettivo abituale della sedazione lieve (PADIS 2018). Valutare il delirium con il CAM-ICU.",
+            "locale": "it",
+            "template": "documented-authored-d9b13e3cfc20369b78ef"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "RASS 0: alerta e calmo",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Sedazione lieve fino ad allerta e tranquillo (RASS −2 a 0)",
+            "locale": "it",
+            "template": "documented-authored-ee29f388407851a530d6"
+          },
+          "note": {
+            "text": "Intervallo obiettivo abituale della sedazione lieve (PADIS 2018). Valutare il delirium con il CAM-ICU.",
+            "locale": "it",
+            "template": "documented-authored-d9b13e3cfc20369b78ef"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "RASS +1: inquieto",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Irrequieto (RASS +1)",
+            "locale": "it",
+            "template": "documented-authored-e18f8e22beac16106139"
+          },
+          "note": {
+            "text": "Cercare le cause: dolore, ipossia, vescica piena, astinenza, delirium.",
+            "locale": "it",
+            "template": "documented-authored-c0459b88a708d227a9ed"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "RASS +3: muito agitado",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Agitato fino a combativo (RASS +2 a +4)",
+            "locale": "it",
+            "template": "documented-authored-6157c7fbeb0dbd8614bd"
+          },
+          "note": {
+            "text": "Garantire la sicurezza del paziente e dei dispositivi; trattare la causa e considerare la sedazione.",
+            "locale": "it",
+            "template": "documented-authored-848495dc692b9b1414f7"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "ar": [
+      {
+        "name": "RASS −4: sedação profunda",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "تهدئة عميقة أو غيبوبة (RASS −4 إلى −5)",
+            "locale": "ar",
+            "template": "documented-authored-844b13eb5f3003d3f259"
+          },
+          "note": {
+            "text": "أعد تقييم الحاجة إلى التهدئة العميقة؛ لا يمكن تقييم الهذيان (CAM-ICU).",
+            "locale": "ar",
+            "template": "documented-authored-5570ae177bba995bdb38"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "RASS −3: sedação moderada",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "تهدئة متوسطة (RASS −3)",
+            "locale": "ar",
+            "template": "documented-authored-b313bc9968da484ad591"
+          },
+          "note": {
+            "text": "أعلى من النطاق المعتاد للتهدئة الخفيفة: فكّر في خفض التهدئة إذا لم تكن هناك ضرورة للتهدئة العميقة.",
+            "locale": "ar",
+            "template": "documented-authored-9c46eb7b9d13db351bcd"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "RASS −2: limite inferior da sedação leve",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "تهدئة خفيفة إلى يقظ وهادئ (RASS −2 إلى 0)",
+            "locale": "ar",
+            "template": "documented-authored-ee29f388407851a530d6"
+          },
+          "note": {
+            "text": "النطاق المستهدف المعتاد للتهدئة الخفيفة (PADIS 2018). قيّم الهذيان باستخدام CAM-ICU.",
+            "locale": "ar",
+            "template": "documented-authored-d9b13e3cfc20369b78ef"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "RASS 0: alerta e calmo",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "تهدئة خفيفة إلى يقظ وهادئ (RASS −2 إلى 0)",
+            "locale": "ar",
+            "template": "documented-authored-ee29f388407851a530d6"
+          },
+          "note": {
+            "text": "النطاق المستهدف المعتاد للتهدئة الخفيفة (PADIS 2018). قيّم الهذيان باستخدام CAM-ICU.",
+            "locale": "ar",
+            "template": "documented-authored-d9b13e3cfc20369b78ef"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "RASS +1: inquieto",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "مضطرب (RASS +1)",
+            "locale": "ar",
+            "template": "documented-authored-e18f8e22beac16106139"
+          },
+          "note": {
+            "text": "ابحث عن الأسباب: الألم، نقص الأكسجة، امتلاء المثانة، الانسحاب، الهذيان.",
+            "locale": "ar",
+            "template": "documented-authored-c0459b88a708d227a9ed"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "RASS +3: muito agitado",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "مضطرب إلى عدواني (RASS +2 إلى +4)",
+            "locale": "ar",
+            "template": "documented-authored-6157c7fbeb0dbd8614bd"
+          },
+          "note": {
+            "text": "ضمن سلامة المريض والأجهزة؛ عالج السبب وفكّر في التهدئة.",
+            "locale": "ar",
+            "template": "documented-authored-848495dc692b9b1414f7"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "zh": [
+      {
+        "name": "RASS −4: sedação profunda",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "深度镇静或昏迷（RASS −4 至 −5）",
+            "locale": "zh",
+            "template": "documented-authored-844b13eb5f3003d3f259"
+          },
+          "note": {
+            "text": "重新评估深度镇静的必要性；无法评估谵妄（CAM-ICU）。",
+            "locale": "zh",
+            "template": "documented-authored-5570ae177bba995bdb38"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "RASS −3: sedação moderada",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "中度镇静（RASS −3）",
+            "locale": "zh",
+            "template": "documented-authored-b313bc9968da484ad591"
+          },
+          "note": {
+            "text": "高于常规轻度镇静范围：如果没有深度镇静指征，请考虑减少镇静。",
+            "locale": "zh",
+            "template": "documented-authored-9c46eb7b9d13db351bcd"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "RASS −2: limite inferior da sedação leve",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "轻度镇静至清醒平静（RASS −2 至 0）",
+            "locale": "zh",
+            "template": "documented-authored-ee29f388407851a530d6"
+          },
+          "note": {
+            "text": "轻度镇静的常用目标范围（PADIS 2018）。使用 CAM-ICU 评估谵妄。",
+            "locale": "zh",
+            "template": "documented-authored-d9b13e3cfc20369b78ef"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "RASS 0: alerta e calmo",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "轻度镇静至清醒平静（RASS −2 至 0）",
+            "locale": "zh",
+            "template": "documented-authored-ee29f388407851a530d6"
+          },
+          "note": {
+            "text": "轻度镇静的常用目标范围（PADIS 2018）。使用 CAM-ICU 评估谵妄。",
+            "locale": "zh",
+            "template": "documented-authored-d9b13e3cfc20369b78ef"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "RASS +1: inquieto",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "烦躁（RASS +1）",
+            "locale": "zh",
+            "template": "documented-authored-e18f8e22beac16106139"
+          },
+          "note": {
+            "text": "寻找原因：疼痛、低氧、膀胱充盈、戒断、谵妄。",
+            "locale": "zh",
+            "template": "documented-authored-c0459b88a708d227a9ed"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "RASS +3: muito agitado",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "躁动至暴力（RASS +2 至 +4）",
+            "locale": "zh",
+            "template": "documented-authored-6157c7fbeb0dbd8614bd"
+          },
+          "note": {
+            "text": "确保患者和设备安全；治疗病因并考虑镇静。",
+            "locale": "zh",
+            "template": "documented-authored-848495dc692b9b1414f7"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "ja": [
+      {
+        "name": "RASS −4: sedação profunda",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "深鎮静または昏睡（RASS −4～−5）",
+            "locale": "ja",
+            "template": "documented-authored-844b13eb5f3003d3f259"
+          },
+          "note": {
+            "text": "深鎮静の必要性を再評価する；せん妄（CAM-ICU）は評価できない。",
+            "locale": "ja",
+            "template": "documented-authored-5570ae177bba995bdb38"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "RASS −3: sedação moderada",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "中等度鎮静（RASS −3）",
+            "locale": "ja",
+            "template": "documented-authored-b313bc9968da484ad591"
+          },
+          "note": {
+            "text": "通常の軽度鎮静の範囲を上回る：深鎮静の適応がなければ、鎮静の減量を考慮する。",
+            "locale": "ja",
+            "template": "documented-authored-9c46eb7b9d13db351bcd"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "RASS −2: limite inferior da sedação leve",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "軽度鎮静から覚醒して落ち着いている状態（RASS −2〜0）",
+            "locale": "ja",
+            "template": "documented-authored-ee29f388407851a530d6"
+          },
+          "note": {
+            "text": "軽度鎮静の通常の目標範囲（PADIS 2018）。CAM-ICUでせん妄を評価する。",
+            "locale": "ja",
+            "template": "documented-authored-d9b13e3cfc20369b78ef"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "RASS 0: alerta e calmo",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "軽度鎮静から覚醒して落ち着いている状態（RASS −2〜0）",
+            "locale": "ja",
+            "template": "documented-authored-ee29f388407851a530d6"
+          },
+          "note": {
+            "text": "軽度鎮静の通常の目標範囲（PADIS 2018）。CAM-ICUでせん妄を評価する。",
+            "locale": "ja",
+            "template": "documented-authored-d9b13e3cfc20369b78ef"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "RASS +1: inquieto",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "落ち着きがない（RASS +1）",
+            "locale": "ja",
+            "template": "documented-authored-e18f8e22beac16106139"
+          },
+          "note": {
+            "text": "原因を探す：痛み、低酸素、膀胱充満、離脱、せん妄。",
+            "locale": "ja",
+            "template": "documented-authored-c0459b88a708d227a9ed"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "RASS +3: muito agitado",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "興奮から攻撃的（RASS +2〜+4）",
+            "locale": "ja",
+            "template": "documented-authored-6157c7fbeb0dbd8614bd"
+          },
+          "note": {
+            "text": "患者と機器の安全を確保し、原因を治療し、鎮静を検討する。",
+            "locale": "ja",
+            "template": "documented-authored-848495dc692b9b1414f7"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "hi": [
+      {
+        "name": "RASS −4: sedação profunda",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "गहरी सेडेशन या कोमा (RASS −4 से −5)",
+            "locale": "hi",
+            "template": "documented-authored-844b13eb5f3003d3f259"
+          },
+          "note": {
+            "text": "गहरी सेडेशन की आवश्यकता का पुनर्मूल्यांकन करें; डिलिरियम (CAM-ICU) का आकलन नहीं किया जा सकता।",
+            "locale": "hi",
+            "template": "documented-authored-5570ae177bba995bdb38"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "RASS −3: sedação moderada",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "मध्यम सेडेशन (RASS −3)",
+            "locale": "hi",
+            "template": "documented-authored-b313bc9968da484ad591"
+          },
+          "note": {
+            "text": "हल्की सेडेशन की सामान्य सीमा से ऊपर: यदि गहरी सेडेशन का संकेत नहीं है, तो सेडेशन कम करने पर विचार करें।",
+            "locale": "hi",
+            "template": "documented-authored-9c46eb7b9d13db351bcd"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "RASS −2: limite inferior da sedação leve",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "हल्की सेडेशन से लेकर सतर्क और शांत (RASS −2 से 0)",
+            "locale": "hi",
+            "template": "documented-authored-ee29f388407851a530d6"
+          },
+          "note": {
+            "text": "हल्की सेडेशन की सामान्य लक्ष्य सीमा (PADIS 2018)। CAM-ICU से डिलीरियम का आकलन करें।",
+            "locale": "hi",
+            "template": "documented-authored-d9b13e3cfc20369b78ef"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "RASS 0: alerta e calmo",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "हल्की सेडेशन से लेकर सतर्क और शांत (RASS −2 से 0)",
+            "locale": "hi",
+            "template": "documented-authored-ee29f388407851a530d6"
+          },
+          "note": {
+            "text": "हल्की सेडेशन की सामान्य लक्ष्य सीमा (PADIS 2018)। CAM-ICU से डिलीरियम का आकलन करें।",
+            "locale": "hi",
+            "template": "documented-authored-d9b13e3cfc20369b78ef"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "RASS +1: inquieto",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "बेचैन (RASS +1)",
+            "locale": "hi",
+            "template": "documented-authored-e18f8e22beac16106139"
+          },
+          "note": {
+            "text": "कारणों की तलाश करें: दर्द, हाइपोक्सिया, भरा हुआ मूत्राशय, वापसी, डिलीरियम।",
+            "locale": "hi",
+            "template": "documented-authored-c0459b88a708d227a9ed"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "RASS +3: muito agitado",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "उत्तेजित से आक्रामक (RASS +2 से +4)",
+            "locale": "hi",
+            "template": "documented-authored-6157c7fbeb0dbd8614bd"
+          },
+          "note": {
+            "text": "रोगी और उपकरणों की सुरक्षा सुनिश्चित करें; कारण का उपचार करें और सेडेशन पर विचार करें।",
+            "locale": "hi",
+            "template": "documented-authored-848495dc692b9b1414f7"
+          },
+          "level": "high"
+        }
+      }
+    ]
+  }
+}

@@ -70,3 +70,49 @@ Risultato della formula o classificazione. Interpretazione, condotta e applicabi
 Apache-2.0 si applica solo al codice di ELUCENIA. I diritti su strumenti, pubblicazioni, traduzioni e dati restano ai rispettivi titolari. Conservi LICENSE e NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Risultati documentati
+
+Le informazioni seguenti conservano gli output del metodo per esempi sintetici. Non costituiscono una validazione clinica indipendente.
+
+### 1
+
+Sedazione profonda o coma (RASS −4 a −5)
+
+Rivalutare la necessità di sedazione profonda; non è possibile valutare il delirium (CAM-ICU).
+
+
+### 2
+
+Sedazione moderata (RASS −3)
+
+Al di sopra dell’intervallo abituale di sedazione lieve: considerare di ridurre la sedazione se non vi è indicazione per una sedazione profonda.
+
+
+### 3
+
+Sedazione lieve fino ad allerta e tranquillo (RASS −2 a 0)
+
+Intervallo obiettivo abituale della sedazione lieve (PADIS 2018). Valutare il delirium con il CAM-ICU.
+
+
+### 4
+
+Sedazione lieve fino ad allerta e tranquillo (RASS −2 a 0)
+
+Intervallo obiettivo abituale della sedazione lieve (PADIS 2018). Valutare il delirium con il CAM-ICU.
+
+
+### 5
+
+Irrequieto (RASS +1)
+
+Cercare le cause: dolore, ipossia, vescica piena, astinenza, delirium.
+
+
+### 6
+
+Agitato fino a combativo (RASS +2 a +4)
+
+Garantire la sicurezza del paziente e dei dispositivi; trattare la causa e considerare la sedazione.
+

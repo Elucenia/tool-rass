@@ -70,3 +70,49 @@ Ergebnis der Formel oder Klassifikation. Interpretation, Vorgehen und Anwendbark
 Apache-2.0 gilt nur für den ELUCENIA-Code. Die Rechte an Instrumenten, Veröffentlichungen, Übersetzungen und Daten verbleiben bei den jeweiligen Rechteinhabern. Bewahren Sie LICENSE und NOTICE auf.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Dokumentierte Ergebnisse
+
+Die folgenden Angaben bewahren die Ausgaben der Methode für synthetische Beispiele. Sie stellen keine unabhängige klinische Validierung dar.
+
+### 1
+
+Tiefe Sedierung oder Koma (RASS −4 bis −5)
+
+Die Notwendigkeit einer tiefen Sedierung neu bewerten; ein Delir kann nicht beurteilt werden (CAM-ICU).
+
+
+### 2
+
+Mäßige Sedierung (RASS −3)
+
+Oberhalb des üblichen Bereichs der leichten Sedierung: Erwägen Sie eine Reduktion der Sedierung, wenn keine Indikation für eine tiefe Sedierung besteht.
+
+
+### 3
+
+Leichte Sedierung bis wach und ruhig (RASS −2 bis 0)
+
+Üblicher Zielbereich für leichte Sedierung (PADIS 2018). Beurteilen Sie ein Delir mit dem CAM-ICU.
+
+
+### 4
+
+Leichte Sedierung bis wach und ruhig (RASS −2 bis 0)
+
+Üblicher Zielbereich für leichte Sedierung (PADIS 2018). Beurteilen Sie ein Delir mit dem CAM-ICU.
+
+
+### 5
+
+Unruhig (RASS +1)
+
+Suchen Sie nach Ursachen: Schmerzen, Hypoxie, volle Blase, Entzug, Delir.
+
+
+### 6
+
+Agitiert bis kämpferisch (RASS +2 bis +4)
+
+Gewährleisten Sie die Sicherheit des Patienten und der Geräte; behandeln Sie die Ursache und erwägen Sie eine Sedierung.
+

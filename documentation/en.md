@@ -70,3 +70,49 @@ Formula or classification result. Interpretation, care and applicability depend 
 Apache-2.0 applies only to ELUCENIA code. Rights to instruments, publications, translations and data remain with their respective holders. Preserve LICENSE and NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Documented results
+
+The information below preserves the method outputs for synthetic examples. It does not constitute independent clinical validation.
+
+### 1
+
+Deep sedation or coma (RASS −4 to −5)
+
+Reassess the need for deep sedation; delirium cannot be assessed (CAM-ICU).
+
+
+### 2
+
+Moderate sedation (RASS −3)
+
+Above the usual range of light sedation: consider reducing sedation if there is no indication for deep sedation.
+
+
+### 3
+
+Light sedation to alert and calm (RASS −2 to 0)
+
+Usual target range for light sedation (PADIS 2018). Assess delirium with CAM-ICU.
+
+
+### 4
+
+Light sedation to alert and calm (RASS −2 to 0)
+
+Usual target range for light sedation (PADIS 2018). Assess delirium with CAM-ICU.
+
+
+### 5
+
+Restless (RASS +1)
+
+Look for causes: pain, hypoxia, full bladder, withdrawal, delirium.
+
+
+### 6
+
+Agitated to combative (RASS +2 to +4)
+
+Ensure patient and device safety; treat the cause and consider sedation.
+

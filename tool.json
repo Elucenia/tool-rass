@@ -277,7 +277,7 @@
       "publicCandidateBankOmitted": true
     },
     "methodVersion": "RASS/Sessler 2002:Ely 2003:−5 a+4, observação→voz→estímulo físico",
-    "implementationVersion": "rass@native-2026-10-03+1760c42d707f",
+    "implementationVersion": "rass@native-2026-10-05+0a333f51dff6",
     "currentMethodSource": "https://pubmed.ncbi.nlm.nih.gov/12421743/",
     "versionEvidence": {
       "status": "variant-and-source-edition-recorded",
@@ -539,7 +539,35 @@
       "clinicalApproval": "not-performed",
       "translationApproval": "not-performed",
       "releaseApproval": "not-performed",
-      "implementationHash": "1760c42d707f257c03a18c41a72cb95fbb42c905d6fd22bbf54c36f2151a6a23"
+      "implementationHash": "0a333f51dff6fc5d65a7278484e3eccd1e336204a0168c94632cff40778f1429",
+      "documentedOutputContract": {
+        "fields": [
+          "level",
+          "verdict",
+          "rows",
+          "note"
+        ],
+        "scope": "Optional documented outputs already produced by the existing scientific method; no new classification or treatment decision.",
+        "sourceExposureReceipt": {
+          "file": "reports/review-20261005-completion/native-result-presentation-r1/applied-output-r1/receipt.json",
+          "sha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        },
+        "scientificBodiesUnchanged": true,
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed"
+      },
+      "technicalBindingHistory": [
+        {
+          "recordedAt": "2026-10-05T23:55:42.176Z",
+          "scope": "Expose existing documented result fields; scientific body and complete input contract unchanged.",
+          "previousImplementationVersion": "rass@native-2026-10-03+1760c42d707f",
+          "previousImplementationHash": "1760c42d707f257c03a18c41a72cb95fbb42c905d6fd22bbf54c36f2151a6a23",
+          "implementationHash": "0a333f51dff6fc5d65a7278484e3eccd1e336204a0168c94632cff40778f1429",
+          "scientificBodySha256": "e85276683115c11c8a08c490b617391606f7137a1aaae50779ecc2e6796ea25d",
+          "metadataContractHash": "65579b967c43317bd63b3ceaa3ec516f2d731e9f6f0a99e256ab10d73d06d6fc",
+          "exposureReceiptSha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        }
+      ]
     },
     "limits": "A RASS de 2002 foi estudada para agitação e sedação em adultos de UTI, com e sem ventilação ou sedativos, e envolveu avaliadores treinados. O resultado depende de observação e aplicação apropriadas; não é, isoladamente, diagnóstico de delirium nem prescrição de dose de sedativo. Uso pediátrico e protocolos de tratamento requerem fontes próprias.",
     "sourceLimitEvidence": {
@@ -558,20 +586,20 @@
   },
   "currentSource": {
     "file": "apps/website/private/tool-code/rass/calculator.js",
-    "bytes": 5610,
-    "sha256": "1760c42d707f257c03a18c41a72cb95fbb42c905d6fd22bbf54c36f2151a6a23"
+    "bytes": 5815,
+    "sha256": "0a333f51dff6fc5d65a7278484e3eccd1e336204a0168c94632cff40778f1429"
   },
-  "sourceToolSha256": "b72ebc6f3c2509fe2f2b4aef23ed446f5a54a0e0c63f53040a5237a7d425d45c",
+  "sourceToolSha256": "7ce800b819de36e717e0d4bfb6e64145afc7f5cac8f5198b794d56f67f761938",
   "omittedFullReferenceBanks": [
     {
       "rows": 4,
       "sha256": "8b94ece5d70f8fe1b21281f908c0cfa8b0b17deb7f2daccbe77dac0d0b2d5a38",
-      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+      "reason": "Large independent reference bank not bundled; historical proof scope retained"
     },
     {
       "rows": 4,
       "sha256": "8b94ece5d70f8fe1b21281f908c0cfa8b0b17deb7f2daccbe77dac0d0b2d5a38",
-      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+      "reason": "Large independent reference bank not bundled; historical proof scope retained"
     }
   ],
   "clinicalApproval": "not-performed",

@@ -1,0 +1,310 @@
+{
+  "schema": "elucenia-public-source-result-preservation-v1",
+  "id": "rass",
+  "source": {
+    "baselineFile": "reports/review-20261005-completion/public-native-output-baseline-r2/baseline.json",
+    "baselineSha256": "e5f274fa5acc74566e1c3d55afb6bb402ad9928337dd77a2945442f5b6c49439",
+    "previousCommit": "56ff7a6407e10ad22ad81c82f7e7ca37e3161ae6",
+    "oldEngineSha256": "1760c42d707f257c03a18c41a72cb95fbb42c905d6fd22bbf54c36f2151a6a23",
+    "currentEngineSha256": "0a333f51dff6fc5d65a7278484e3eccd1e336204a0168c94632cff40778f1429"
+  },
+  "scope": "Existing synthetic inputs and same pinned mathematical-function outputs. Clinical interpretation correctness and professional translation are separate unperformed reviews.",
+  "clinicalApproval": "not-performed",
+  "professionalLanguageReview": "not-performed",
+  "cases": [
+    {
+      "caseIndex": 0,
+      "name": "RASS −4: sedação profunda",
+      "input": {
+        "rass": "-4"
+      },
+      "publicOutput": {
+        "id": "rass",
+        "main": [
+          "-4",
+          "na RASS"
+        ],
+        "label": "RASS",
+        "raw": {
+          "score": -4
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "score": -4,
+        "level": "high"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "-4",
+          "na RASS"
+        ],
+        "label": "RASS",
+        "level": "high",
+        "verdict": "Sedação profunda ou coma (RASS −4 a −5)",
+        "note": "Reavalie a necessidade de sedação profunda; não é possível avaliar delirium (CAM-ICU).",
+        "raw": {
+          "score": -4
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "note"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "note"
+      ]
+    },
+    {
+      "caseIndex": 1,
+      "name": "RASS −3: sedação moderada",
+      "input": {
+        "rass": "-3"
+      },
+      "publicOutput": {
+        "id": "rass",
+        "main": [
+          "-3",
+          "na RASS"
+        ],
+        "label": "RASS",
+        "raw": {
+          "score": -3
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "score": -3,
+        "level": "mid"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "-3",
+          "na RASS"
+        ],
+        "label": "RASS",
+        "level": "mid",
+        "verdict": "Sedação moderada (RASS −3)",
+        "note": "Acima da faixa usual de sedação leve: considere reduzir a sedação se não houver indicação de sedação profunda.",
+        "raw": {
+          "score": -3
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "note"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "note"
+      ]
+    },
+    {
+      "caseIndex": 2,
+      "name": "RASS −2: limite inferior da sedação leve",
+      "input": {
+        "rass": "-2"
+      },
+      "publicOutput": {
+        "id": "rass",
+        "main": [
+          "-2",
+          "na RASS"
+        ],
+        "label": "RASS",
+        "raw": {
+          "score": -2
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "score": -2,
+        "level": "low"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "-2",
+          "na RASS"
+        ],
+        "label": "RASS",
+        "level": "low",
+        "verdict": "Sedação leve a alerta e calmo (RASS −2 a 0)",
+        "note": "Faixa-alvo habitual da sedação leve (PADIS 2018). Avalie delirium com o CAM-ICU.",
+        "raw": {
+          "score": -2
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "note"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "note"
+      ]
+    },
+    {
+      "caseIndex": 3,
+      "name": "RASS 0: alerta e calmo",
+      "input": {
+        "rass": "0"
+      },
+      "publicOutput": {
+        "id": "rass",
+        "main": [
+          "0",
+          "na RASS"
+        ],
+        "label": "RASS",
+        "raw": {
+          "score": 0
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "score": 0,
+        "level": "low"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "0",
+          "na RASS"
+        ],
+        "label": "RASS",
+        "level": "low",
+        "verdict": "Sedação leve a alerta e calmo (RASS −2 a 0)",
+        "note": "Faixa-alvo habitual da sedação leve (PADIS 2018). Avalie delirium com o CAM-ICU.",
+        "raw": {
+          "score": 0
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "note"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "note"
+      ]
+    },
+    {
+      "caseIndex": 4,
+      "name": "RASS +1: inquieto",
+      "input": {
+        "rass": "1"
+      },
+      "publicOutput": {
+        "id": "rass",
+        "main": [
+          "1",
+          "na RASS"
+        ],
+        "label": "RASS",
+        "raw": {
+          "score": 1
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "score": 1,
+        "level": "mid"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "1",
+          "na RASS"
+        ],
+        "label": "RASS",
+        "level": "mid",
+        "verdict": "Inquieto (RASS +1)",
+        "note": "Procure causas: dor, hipóxia, bexiga cheia, abstinência, delirium.",
+        "raw": {
+          "score": 1
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "note"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "note"
+      ]
+    },
+    {
+      "caseIndex": 5,
+      "name": "RASS +3: muito agitado",
+      "input": {
+        "rass": "3"
+      },
+      "publicOutput": {
+        "id": "rass",
+        "main": [
+          "3",
+          "na RASS"
+        ],
+        "label": "RASS",
+        "raw": {
+          "score": 3
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "score": 3,
+        "level": "high"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "3",
+          "na RASS"
+        ],
+        "label": "RASS",
+        "level": "high",
+        "verdict": "Agitado a combativo (RASS +2 a +4)",
+        "note": "Garanta a segurança do paciente e dos dispositivos; trate a causa e considere sedação.",
+        "raw": {
+          "score": 3
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "note"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "note"
+      ]
+    }
+  ]
+}
